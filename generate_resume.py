@@ -94,8 +94,8 @@ def build_resume():
     story.append(job_header)
     story.append(Indenter(left=-INDENT))
     story.append(Paragraph(
-        "Leading a 35+ person team owning full-stack search algorithms (retrieval, pre-ranking, ranking, mix-ranking) "
-        "and <b>AI Shopping Agent</b> for TikTok's global e-commerce across the US, Southeast Asia, Europe, and more.",
+        "Lead a 35+ engineer organization owning AI Search and Shopping Agent systems for TikTok global e-commerce "
+        "across multiple regions, driving end-to-end product and technical roadmap.",
         style_body_small
     ))
 
