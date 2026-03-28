@@ -145,7 +145,7 @@ def build_resume():
     story.append(job_header3)
     story.append(Indenter(left=-INDENT))
     story.append(Paragraph(
-        "Pioneered <b>EdgeRec</b> - the industry's first on-device AI recommender in a billion-scale commerce feed for Mobile Taobao. "
+        "Pioneered <b>EdgeRec</b> - the industry's first on-device AI recommender systems in a billion-scale commerce feed for Mobile Taobao. "
         "Invented the <b>Generator-Evaluator</b> two-stage re-ranking framework (GRN, GE), now the standard paradigm for listwise re-ranking. "
         "Created Alibaba's Edge-X-Platform (Edge-Cloud MLOps), powering 10+ business lines across Alibaba.",
         style_body_small
