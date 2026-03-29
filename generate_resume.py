@@ -69,7 +69,7 @@ def build_resume():
     # === About ===
     story.append(Paragraph("ABOUT", style_section))
     story.append(Paragraph(
-        "Director of Engineering at TikTok, leading a 35+ person team building <b>AI Search</b> and <b>AI Shopping Agent</b> "
+        "Director of Engineering at TikTok, leading a 35+ person team building <b>AI Search</b> and <b>Shopping Agent</b> "
         "for global e-commerce. 9+ years of experience in large-scale search and recommender systems, previously at ByteDance and Alibaba. "
         "My work spans search, recommendation, and agent systems, which I view as different forms of large-scale decision systems "
         "for resolving user intent under uncertainty \u2014 from retrieval and ranking to multi-step reasoning and decision making.",
@@ -107,8 +107,8 @@ def build_resume():
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Large Search Model</b> \u2014 Transformer-based search model with parameter and behavior sequence length scaling up across retrieval and ranking.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Multi-Modality</b> \u2014 multi-modal representation fusion and co-training for retrieval and ranking.", style_bullet))
 
-    story.append(Paragraph("AI Shopping Agent", style_exp_label))
-    story.append(Paragraph("Built and launched TikTok's AI Shopping Agent from scratch:", style_body_small))
+    story.append(Paragraph("Shopping Agent", style_exp_label))
+    story.append(Paragraph("Built and launched TikTok's Shopping Agent from scratch:", style_body_small))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Agent Framework</b> \u2014 Planner-Executor-Verifier architecture (extended ReAct) with multi-turn context management and heterogeneous tool use (Web / Product / Video Search).", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Memory &amp; Personalization</b> \u2014 Memory-as-Tool design that leverages user behavioral signals for personalized responses.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Post-Training</b> \u2014 rejection-sampling SFT with synthetic multi-turn data for model cold-start; RL fine-tuning with Rubric Reward &amp; Deep Search Reward. Research on Active Reasoning of LLM Agents (T3, AREW).", style_bullet))
