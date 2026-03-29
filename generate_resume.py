@@ -103,7 +103,7 @@ def build_resume():
     story.append(Paragraph("LLM-powered Search", style_exp_label))
     story.append(Paragraph("Drove significant GMV gains through LLM-powered search innovations:", style_body_small))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Generative Retrieval</b> \u2014 decode-only generative models for product retrieval.", style_bullet))
-    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Large Search Model (LSM)</b> \u2014 Transformer-based search model with parameter scaling across retrieval and ranking.", style_bullet))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Large Search Model</b> \u2014 Transformer-based search model with parameter scaling across retrieval and ranking.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Multi-Modality</b> \u2014 multi-modal representation fusion and co-training for retrieval and ranking.", style_bullet))
 
     story.append(Paragraph("AI Shopping Agent", style_exp_label))
