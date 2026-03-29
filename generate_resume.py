@@ -136,7 +136,7 @@ def build_resume():
 
     story.append(Paragraph("Homepage Feed Recommendation", style_exp_label))
     story.append(Paragraph("Built and scaled the full-stack recommendation pipeline for Douyin Mall's homepage feed:", style_body_small))
-    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Retrieval</b> \u2014 Beyond-dual-tower retrieval with cross-tower feature interaction, multi-objective cascade for full-pipeline consistency with advanced loss optimization, and advanced i2i modeling.", style_bullet))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Deep Retrieval</b> \u2014 Beyond-dual-tower retrieval with cross-tower feature interaction, multi-objective cascade for full-pipeline consistency with advanced loss optimization, and advanced i2i modeling.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Large Ranking Model</b> \u2014 Pioneered Large Ranking Model with parameter scaling across sparse and dense components, long-sequence-to-graph modeling, and scaling laws exploration.", style_bullet))
 
     story.append(Paragraph("Product Cold-Start System", style_exp_label))
