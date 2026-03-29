@@ -2,7 +2,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor
 from reportlab.lib.styles import ParagraphStyle
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, HRFlowable, Table, TableStyle, Indenter
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, HRFlowable, Table, TableStyle, Indenter, PageBreak
 from reportlab.lib.enums import TA_LEFT, TA_CENTER, TA_RIGHT
 
 # Colors
@@ -147,6 +147,7 @@ def build_resume():
     # story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 Monthly transacting products +199% (6.4M \u2192 19M); new-product 0\u21921 sales +625%.", style_bullet))
 
     # --- Alibaba ---
+    story.append(PageBreak())
     story.append(Spacer(1, 4))
     story.append(Indenter(left=INDENT))
     job_header3 = Table(
