@@ -125,13 +125,27 @@ def build_resume():
     story.append(job_header2)
     story.append(Indenter(left=-INDENT))
     story.append(Paragraph(
-        "Led a 20+ person team. Built <b>Douyin Mall</b>'s <b>homepage feed recommendation system</b> from scratch - "
-        "the full-stack personalized pipeline covering retrieval, ranking, and mix-ranking across heterogeneous "
-        "content types (products, short videos, and livestreams). Laid the technical foundation for Douyin's "
-        "personalized e-commerce recommendations, contributing to Douyin E-commerce's growth into "
+        "Led a 20+ engineer team building <b>Douyin Mall</b>'s core recommendation and product growth systems from 0\u21921, "
+        "defining the technical foundation for personalized e-commerce and contributing to its growth into "
         "<b>China's second-largest e-commerce platform</b> by GMV.",
         style_body_small
     ))
+    story.append(Paragraph(
+        "Owned end-to-end recommendation architecture supporting large-scale e-commerce traffic (~170M daily active users) "
+        "across heterogeneous content (products, short videos, livestreams), spanning retrieval, ranking, and cold-start systems.",
+        style_body_small
+    ))
+
+    story.append(Paragraph("Homepage Feed Recommendation", style_exp_label))
+    story.append(Paragraph("Built and scaled the full-stack recommendation pipeline for Douyin Mall's homepage feed:", style_body_small))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Retrieval</b> \u2014 Beyond-dual-tower retrieval with cross-tower feature interaction, multi-objective cascade for full-pipeline consistency with advanced loss optimization, and advanced i2i modeling.", style_bullet))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Large Ranking Model</b> \u2014 Pioneered Large Ranking Model with parameter scaling across sparse and dense components, long-sequence-to-graph modeling, and scaling laws exploration.", style_bullet))
+
+    story.append(Paragraph("Product Cold-Start System", style_exp_label))
+    story.append(Paragraph("Led the design of a dedicated cold-start system to bootstrap new products at scale:", style_body_small))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Traffic Strategy</b> \u2014 Built a lane-separated serving architecture decoupled from the main traffic flow, enabling controlled exploration of new products; developed request-level uplift modeling for personalized traffic allocation, balancing exploration efficiency and conversion impact.", style_bullet))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Efficiency Optimization</b> \u2014 Enhanced cold-start ranking with multi-modal representations, similar-product knowledge transfer, and cold-start-aware training strategies under sparse feedback.", style_bullet))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 Monthly transacting products +199% (6.4M \u2192 19M); new-product 0\u21921 sales +625%.", style_bullet))
 
     # --- Alibaba ---
     story.append(Spacer(1, 4))
