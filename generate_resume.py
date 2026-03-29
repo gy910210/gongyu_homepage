@@ -111,7 +111,7 @@ def build_resume():
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Memory &amp; Personalization</b> \u2014 Memory-as-Tool design that leverages user behavioral signals for personalized responses.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Post-Training</b> \u2014 rejection-sampling SFT with synthetic multi-turn data for model cold-start; RL fine-tuning with Rubric Reward &amp; Deep Search Reward. Research on Active Reasoning of LLM Agents (T3, AREW).", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Evaluation &amp; Benchmark</b> \u2014 built ShoppingBench (deep product search), APeB (personalized agent behavior, with public leaderboard), and rubric-based report evaluation.", style_bullet))
-    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 improved conversion rate (+0.2pp), reduced query reformulation rate by 3%, and improved user engagement by +34% in side-by-side (SBS) evaluation.", style_bullet))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 improved conversion rate (+0.2%), reduced query reformulation rate by 3%, and improved user engagement by +34% in side-by-side (SBS) evaluation.", style_bullet))
 
     # --- ByteDance ---
     story.append(Spacer(1, 4))
