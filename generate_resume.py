@@ -195,6 +195,7 @@ def build_resume():
     add_pub("IRGAN: A Minimax Game for Unifying Generative and Discriminative IR Models", "SIGIR 2017", "Best Paper Honorable Mention")
     add_pub("Conceptualize and Infer User Needs in E-commerce", "CIKM 2019")
     add_pub("Query Tracking for E-commerce Conversational Search", "CIKM 2018")
+    add_pub("A Minimax Game for Instance Based Selective Transfer Learning", "SIGKDD 2019")
 
     # --- NLP & Text Generation ---
     story.append(Paragraph("NLP &amp; Text Generation", style_pub_group))
