@@ -127,10 +127,7 @@ def build_resume():
     story.append(Paragraph(
         "Led a 20+ engineer team building <b>Douyin Mall</b>'s core recommendation and product growth systems from 0\u21921, "
         "defining the foundation for personalized e-commerce and contributing to its growth into "
-        "<b>China's second-largest e-commerce platform</b> by GMV.",
-        style_body_small
-    ))
-    story.append(Paragraph(
+        "<b>China's second-largest e-commerce platform</b> by GMV. "
         "Owned end-to-end recommendation architecture supporting ~170M daily active users "
         "across products, short videos, and livestreams, spanning retrieval, ranking, and cold-start systems.",
         style_body_small
