@@ -184,6 +184,7 @@ def build_resume():
     # --- Benchmarks ---
     story.append(Paragraph("Benchmarks", style_pub_group))
     add_pub("APeB: Benchmarking Personalization Ability of Large Language Model Agents", "Submitted to ICML 2026", "Project Lead")
+    add_pub("ShoppingComp: Are LLMs Really Ready for Your Shopping Cart?", "Submitted to ICML 2026", "Joint Research")
 
     # --- Recommender Systems ---
     story.append(Paragraph("Recommender Systems", style_pub_group))
