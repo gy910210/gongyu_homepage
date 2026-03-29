@@ -112,7 +112,7 @@ def build_resume():
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Memory &amp; Personalization</b> \u2014 Memory-as-Tool design that leverages user behavioral signals for personalized responses.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Post-Training</b> \u2014 rejection-sampling SFT with synthetic multi-turn data for model cold-start; RL fine-tuning with Rubric Reward &amp; Deep Search Reward. Research on Active Reasoning of LLM Agents (T3, AREW).", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Evaluation &amp; Benchmark</b> \u2014 built ShoppingBench (deep product search), APeB (personalized agent behavior, with public leaderboard), and rubric-based report evaluation.", style_bullet))
-    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 improved conversion rate (+0.2%), reduced query reformulation rate by 3%, and improved user engagement by +34% in side-by-side (SBS) evaluation.", style_bullet))
+    # story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 improved conversion rate (+0.2%), reduced query reformulation rate by 3%, and improved user engagement by +34% in side-by-side (SBS) evaluation.", style_bullet))
 
     # --- ByteDance ---
     story.append(Spacer(1, 4))
@@ -143,7 +143,7 @@ def build_resume():
     story.append(Paragraph("Led the design of a dedicated cold-start system to bootstrap new products at scale:", style_body_small))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Traffic Strategy</b> \u2014 Built a lane-separated serving architecture decoupled from the main traffic flow, enabling controlled exploration of new products; developed request-level uplift modeling for personalized traffic allocation, balancing exploration efficiency and conversion impact.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Efficiency Optimization</b> \u2014 Enhanced cold-start ranking with multi-modal representations, similar-product knowledge transfer, and cold-start-aware training strategies under sparse feedback.", style_bullet))
-    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 Monthly transacting products +199% (6.4M \u2192 19M); new-product 0\u21921 sales +625%.", style_bullet))
+    # story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 Monthly transacting products +199% (6.4M \u2192 19M); new-product 0\u21921 sales +625%.", style_bullet))
 
     # --- Alibaba ---
     story.append(Spacer(1, 4))
