@@ -29,6 +29,7 @@ style_job_title = ParagraphStyle('JobTitle', fontName='Helvetica-Bold', fontSize
 style_job_period = ParagraphStyle('JobPeriod', fontName='Helvetica', fontSize=9, textColor=TEXT_MUTED, alignment=TA_RIGHT)
 style_exp_label = ParagraphStyle('ExpLabel', fontName='Helvetica-Bold', fontSize=9, textColor=TEXT_PRIMARY, spaceBefore=4, spaceAfter=1, leftIndent=INDENT)
 style_pub_group = ParagraphStyle('PubGroup', fontName='Helvetica-Oblique', fontSize=9, textColor=TEXT_SECONDARY, spaceBefore=6, spaceAfter=2, leftIndent=INDENT)
+style_pub_oneline = ParagraphStyle('PubOneline', fontName='Helvetica', fontSize=8, textColor=TEXT_SECONDARY, leading=11, spaceAfter=2, leftIndent=INDENT)
 style_edu_desc = ParagraphStyle('EduDesc', fontName='Helvetica', fontSize=8.5, textColor=TEXT_SECONDARY, leading=12, spaceAfter=1, leftIndent=INDENT)
 
 def build_resume():
@@ -166,108 +167,41 @@ def build_resume():
     story.append(Paragraph("SELECTED PUBLICATIONS", style_section))
     story.append(Paragraph('Total citations: 1,690  |  h-index: 16  |  Full list on <a href="https://scholar.google.com/citations?user=QseahYcAAAAJ">Google Scholar</a>', style_body_small))
 
-    # --- Reasoning & Reinforcement Learning ---
-    story.append(Paragraph("Reasoning &amp; Reinforcement Learning", style_pub_group))
-    pubs_reasoning = [
-        ("On Information Self-Locking in Reinforcement Learning for Active Reasoning of LLM Agents",
-         "D Zou, Y Chen, F Feng, M Li, P Li, <b>Y Gong</b>, J Cheng",
-         "Submitted to ICML 2026", "Project Lead", None),
-        ("Reducing Belief Deviation in Reinforcement Learning for Active Reasoning of LLM Agents",
-         "D Zou, Y Chen, J Wang, G Yang, M Li, Q Da, J Cheng, P Li, <b>Y Gong</b>",
-         "ICLR 2026 | Oral", "Project Lead", "1"),
-        ("A Minimax Game for Instance Based Selective Transfer Learning",
-         "B Wang, M Qiu, X Wang, Y Li, <b>Y Gong</b>, X Zeng, J Huang, B Zheng, D Cai, ...",
-         "SIGKDD 2019", None, "60"),
-    ]
-    for title, authors, venue, role, cited in pubs_reasoning:
-        story.append(Paragraph(title, style_pub_title))
-        parts = [f"{authors}  |  {venue}"]
+    # Helper: render one-line publication
+    MUTED = TEXT_MUTED.hexval()
+    def add_pub(title, venue, role=None):
+        meta = f'<font color="#{MUTED[2:]}">, {venue}</font>'
         if role:
-            parts.append(f"  |  <b>{role}</b>")
-        if cited:
-            parts.append(f"  |  Cited by {cited}")
-        story.append(Paragraph("".join(parts), style_pub_meta))
+            meta += f'<font color="#{MUTED[2:]}">  |  {role}</font>'
+        story.append(Paragraph(f"<b>{title}</b>{meta}", style_pub_oneline))
+
+    # --- LLM Agents ---
+    story.append(Paragraph("LLM Agents", style_pub_group))
+    add_pub("On Information Self-Locking in RL for Active Reasoning of LLM Agents", "Submitted to ICML 2026", "Project Lead")
+    add_pub("Reducing Belief Deviation in RL for Active Reasoning of LLM Agents", "ICLR 2026 | Oral", "Project Lead")
 
     # --- Recommender Systems ---
     story.append(Paragraph("Recommender Systems", style_pub_group))
-    pubs_recsys = [
-        ("EdgeRec: Recommender System on Edge in Mobile Taobao",
-         "<b>Y Gong</b>, Z Jiang, Y Feng, B Hu, K Zhao, Q Liu, W Ou",
-         "CIKM 2020", "First Author", "110"),
-        ("Personalized Adaptive Meta Learning for Cold-start User Preference Prediction",
-         "R Yu, <b>Y Gong</b>, X He, Y Zhu, Q Liu, W Ou, B An",
-         "AAAI 2021", None, "101"),
-        ("Exact-k Recommendation via Maximal Clique Optimization",
-         "<b>Y Gong</b>, Y Zhu, L Duan, Q Liu, Z Guan, F Sun, W Ou, KQ Zhu",
-         "SIGKDD 2019", "First Author", "63"),
-        ("GRN: Generative Rerank Network for Context-wise Recommendation",
-         "Y Feng, B Hu, <b>Y Gong</b>, F Sun, Q Liu, W Ou",
-         "arXiv 2021", None, "32"),
-        ("Revisit Recommender System in the Permutation Prospective",
-         "Y Feng, <b>Y Gong</b>, F Sun, Q Liu, W Ou",
-         "arXiv 2021", None, "31"),
-        ("Query-based Interactive Recommendation by Meta-path and Adapted Attention-GRU",
-         "Y Zhu, <b>Y Gong</b>, Q Liu, Y Ma, W Ou, J Zhu, B Wang, Z Guan, D Cai",
-         "CIKM 2019", "Co-First Author", "21"),
-        ("Gift: Graph-guided Feature Transfer for Cold-start Video Click-through Rate Prediction",
-         "Y Cao, S Hu, <b>Y Gong</b>, Z Li, Y Yang, Q Liu, S Ji",
-         "CIKM 2022", None, "18"),
-    ]
-    for title, authors, venue, role, cited in pubs_recsys:
-        story.append(Paragraph(title, style_pub_title))
-        parts = [f"{authors}  |  {venue}"]
-        if role:
-            parts.append(f"  |  <b>{role}</b>")
-        if cited:
-            parts.append(f"  |  Cited by {cited}")
-        story.append(Paragraph("".join(parts), style_pub_meta))
+    add_pub("EdgeRec: Recommender System on Edge in Mobile Taobao", "CIKM 2020", "First Author")
+    add_pub("Personalized Adaptive Meta Learning for Cold-start User Preference Prediction", "AAAI 2021")
+    add_pub("Exact-k Recommendation via Maximal Clique Optimization", "SIGKDD 2019", "First Author")
+    add_pub("GRN: Generative Rerank Network for Context-wise Recommendation", "arXiv 2021")
+    add_pub("Revisit Recommender System in the Permutation Prospective", "arXiv 2021")
+    add_pub("Query-based Interactive Recommendation by Meta-path and Adapted Attention-GRU", "CIKM 2019", "Co-First Author")
+    add_pub("Gift: Graph-guided Feature Transfer for Cold-start Video Click-through Rate Prediction", "CIKM 2022")
 
     # --- Information Retrieval & Search ---
     story.append(Paragraph("Information Retrieval &amp; Search", style_pub_group))
-    pubs_ir = [
-        ("IRGAN: A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models",
-         "J Wang, L Yu, W Zhang, <b>Y Gong</b>, Y Xu, B Wang, Z Peng, D Zhang",
-         "ACM SIGIR 2017", "Best Paper Honorable Mention | First Industry Author", "829"),
-        ("Conceptualize and Infer User Needs in E-commerce",
-         "X Luo, Y Yang, KQ Zhu, <b>Y Gong</b>, K Yang",
-         "CIKM 2019", None, "21"),
-        ("Query Tracking for E-commerce Conversational Search: A Machine Comprehension Perspective",
-         "Y Yang, <b>Y Gong</b>, X Chen",
-         "CIKM 2018", None, "13"),
-    ]
-    for title, authors, venue, role, cited in pubs_ir:
-        story.append(Paragraph(title, style_pub_title))
-        parts = [f"{authors}  |  {venue}"]
-        if role:
-            parts.append(f"  |  <b>{role}</b>")
-        if cited:
-            parts.append(f"  |  Cited by {cited}")
-        story.append(Paragraph("".join(parts), style_pub_meta))
+    add_pub("IRGAN: A Minimax Game for Unifying Generative and Discriminative IR Models", "SIGIR 2017", "Best Paper Honorable Mention")
+    add_pub("Conceptualize and Infer User Needs in E-commerce", "CIKM 2019")
+    add_pub("Query Tracking for E-commerce Conversational Search", "CIKM 2018")
 
     # --- NLP & Text Generation ---
     story.append(Paragraph("NLP &amp; Text Generation", style_pub_group))
-    pubs_nlp = [
-        ("Deep Cascade Multi-task Learning for Slot Filling in Online Shopping Assistant",
-         "<b>Y Gong</b>, X Luo, Y Zhu, W Ou, Z Li, M Zhu, KQ Zhu, L Duan, X Chen",
-         "AAAI 2019", "First Author", "42"),
-        ("Multi-Modal Generative Adversarial Network for Short Product Title Generation in Mobile E-Commerce",
-         "J Zhang, P Zou, Z Li, Y Wan, X Pan, <b>Y Gong</b>, PS Yu",
-         "NAACL 2019", None, "35"),
-        ("Automatic Generation of Chinese Short Product Titles for Mobile Display",
-         "<b>Y Gong</b>, X Luo, KQ Zhu, W Ou, Z Li, L Duan",
-         "AAAI 2019", "First Author", "35"),
-        ("Representing Verbs as Argument Concepts",
-         "<b>Y Gong</b>, K Zhao, KQ Zhu",
-         "AAAI 2016", "First Author", "20"),
-    ]
-    for title, authors, venue, role, cited in pubs_nlp:
-        story.append(Paragraph(title, style_pub_title))
-        parts = [f"{authors}  |  {venue}"]
-        if role:
-            parts.append(f"  |  <b>{role}</b>")
-        if cited:
-            parts.append(f"  |  Cited by {cited}")
-        story.append(Paragraph("".join(parts), style_pub_meta))
+    add_pub("Deep Cascade Multi-task Learning for Slot Filling in Online Shopping Assistant", "AAAI 2019", "First Author")
+    add_pub("Multi-Modal GAN for Short Product Title Generation in Mobile E-Commerce", "NAACL 2019")
+    add_pub("Automatic Generation of Chinese Short Product Titles for Mobile Display", "AAAI 2019", "First Author")
+    add_pub("Representing Verbs as Argument Concepts", "AAAI 2016", "First Author")
 
     # === Education ===
     story.append(Paragraph("EDUCATION", style_section))
