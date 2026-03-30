@@ -69,7 +69,7 @@ def build_resume():
     # === About ===
     story.append(Paragraph("ABOUT", style_section))
     story.append(Paragraph(
-        "Director of Engineering at TikTok, leading a 35+ person team building <b>AI Search</b> and <b>Shopping Agent</b> "
+        "Director of Engineering at TikTok, leading a 40+ person team building <b>AI Search</b> and <b>Shopping Agent</b> "
         "for global e-commerce. 9+ years of experience in large-scale search and recommender systems, previously at ByteDance and Alibaba. "
         "My work spans search, recommendation, and agent systems, which I view as different forms of large-scale decision systems "
         "for resolving user intent under uncertainty \u2014 from retrieval and ranking to multi-step reasoning and decision making.",
@@ -95,7 +95,7 @@ def build_resume():
     story.append(job_header)
     story.append(Indenter(left=-INDENT))
     story.append(Paragraph(
-        "Lead a 35+ engineer organization owning AI Search and Shopping Agent systems for TikTok global e-commerce "
+        "Lead a 40+ engineer organization owning AI Search and Shopping Agent systems for TikTok global e-commerce "
         "across multiple regions (US, Europe, Southeast Asia and more), driving end-to-end product and technical roadmap "
         "for search systems serving ~140M daily e-commerce queries in the US alone.",
         style_body_small
