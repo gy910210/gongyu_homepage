@@ -129,11 +129,10 @@ def build_resume():
     story.append(job_header2)
     story.append(Indenter(left=-INDENT))
     story.append(Paragraph(
-        "Led a 20+ engineer team building <b>Douyin Mall</b>'s core recommendation and product growth systems from 0\u21921, "
-        "defining the foundation for personalized e-commerce and contributing to its growth into "
-        "<b>China's Top 3 largest e-commerce platform</b> by GMV. "
-        "Owned end-to-end recommendation architecture supporting ~170M daily active users "
-        "across products, short videos, and livestreams, spanning retrieval, ranking, and cold-start systems.",
+        "Led the design and development of <b>Douyin Mall</b>'s core recommendation and product growth systems from 0\u21921, "
+        "supporting ~170M daily active users and contributing to its growth into one of <b>China's largest e-commerce platforms</b> by GMV. "
+        "Owned end-to-end recommendation system design across retrieval, ranking, and cold-start "
+        "for products, short videos, and livestreams.",
         style_body_small
     ))
 
