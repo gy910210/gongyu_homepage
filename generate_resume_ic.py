@@ -69,14 +69,17 @@ def build_resume():
     # === About ===
     story.append(Paragraph("ABOUT", style_section))
     story.append(Paragraph(
-        "Director of Engineering at TikTok, leading a 40+ person team building <b>AI Search</b> and <b>Shopping Agent</b> "
+        "Director of Engineering at TikTok, leading the design and development of <b>AI Search</b> and <b>Shopping Agent</b> "
         "for global e-commerce. 9+ years of experience in large-scale search and recommender systems, previously at ByteDance and Alibaba. "
         "My work spans search, recommendation, and agent systems, which I view as different forms of large-scale decision systems "
         "for resolving user intent under uncertainty \u2014 from retrieval and ranking to multi-step reasoning and decision making.",
         style_body
     ))
     story.append(Paragraph(
-        "Research interests: LLM-powered search, LLM agents (post-training, personalization, evaluation), and recommender systems. "
+        "Research interests: LLM-powered search, LLM agents (post-training, personalization, evaluation), and recommender systems.",
+        style_body
+    ))
+    story.append(Paragraph(
         "Recipient of the <b>SIGIR 2017 Best Paper Honorable Mention</b> (IRGAN, 800+ citations).",
         style_body
     ))
