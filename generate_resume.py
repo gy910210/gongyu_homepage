@@ -87,7 +87,7 @@ def build_resume():
     # --- TikTok ---
     story.append(Indenter(left=INDENT))
     job_header = Table(
-        [[Paragraph("<b>Director of Engineering (L6)</b>  |  TikTok", style_job_title),
+        [[Paragraph("<b>Director of Engineering</b>  |  TikTok", style_job_title),
           Paragraph("2024 - Present", style_job_period)]],
         colWidths=[(W - INDENT)*0.72, (W - INDENT)*0.28]
     )
@@ -119,7 +119,7 @@ def build_resume():
     story.append(Spacer(1, 4))
     story.append(Indenter(left=INDENT))
     job_header2 = Table(
-        [[Paragraph("<b>Senior Engineering Manager (3-2)</b>  |  ByteDance", style_job_title),
+        [[Paragraph("<b>Senior Engineering Manager</b>  |  ByteDance", style_job_title),
           Paragraph("2021 - 2024", style_job_period)]],
         colWidths=[(W - INDENT)*0.72, (W - INDENT)*0.28]
     )
@@ -151,7 +151,7 @@ def build_resume():
     story.append(Spacer(1, 4))
     story.append(Indenter(left=INDENT))
     job_header3 = Table(
-        [[Paragraph("<b>Tech Lead (P7)</b>  |  Alibaba Group", style_job_title),
+        [[Paragraph("<b>Tech Lead</b>  |  Alibaba Group", style_job_title),
           Paragraph("2017 - 2021", style_job_period)]],
         colWidths=[(W - INDENT)*0.72, (W - INDENT)*0.28]
     )
