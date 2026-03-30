@@ -119,7 +119,7 @@ def build_resume():
     story.append(Spacer(1, 4))
     story.append(Indenter(left=INDENT))
     job_header2 = Table(
-        [[Paragraph("<b>Senior Engineering Manager</b>  |  ByteDance", style_job_title),
+        [[Paragraph("<b>Senior Engineering Manager / Tech Lead</b>  |  ByteDance", style_job_title),
           Paragraph("2021 - 2024", style_job_period)]],
         colWidths=[(W - INDENT)*0.72, (W - INDENT)*0.28]
     )
