@@ -137,12 +137,12 @@ def build_resume():
     ))
 
     story.append(Paragraph("Homepage Feed Recommendation", style_exp_label))
-    story.append(Paragraph("Built and scaled the full-stack recommendation pipeline for Douyin Mall's homepage feed:", style_body_small))
+    story.append(Paragraph("Designed and scaled the full-stack recommendation system:", style_body_small))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Deep Retrieval</b> \u2014 Beyond-dual-tower retrieval with cross-tower feature interaction, multi-objective cascade for full-pipeline consistency with advanced loss optimization, and advanced i2i modeling.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Large Ranking Model</b> \u2014 Pioneered Large Ranking Model with parameter scaling up across sparse and dense components, long-sequence-to-graph modeling, and scaling laws exploration.", style_bullet))
 
     story.append(Paragraph("Product Cold-Start System", style_exp_label))
-    story.append(Paragraph("Led the design of a dedicated cold-start system to bootstrap new products at scale:", style_body_small))
+    story.append(Paragraph("Led the design of a scalable cold-start system for new products:", style_body_small))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Traffic Strategy</b> \u2014 Built a lane-separated serving architecture decoupled from the main traffic flow, enabling controlled exploration of new products; developed uplift modeling for personalized traffic allocation, balancing exploration efficiency and conversion impact.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Efficiency Optimization</b> \u2014 Enhanced cold-start ranking with multi-modal representations, similar-product knowledge transfer, and cold-start-aware training strategies under sparse feedback.", style_bullet))
     # story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 Monthly transacting products +199% (6.4M \u2192 19M); new-product 0\u21921 sales +625%.", style_bullet))
