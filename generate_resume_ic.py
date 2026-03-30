@@ -104,13 +104,13 @@ def build_resume():
     ))
 
     story.append(Paragraph("LLM-powered Search", style_exp_label))
-    story.append(Paragraph("Drove significant GMV gains through LLM-powered search innovations:", style_body_small))
+    story.append(Paragraph("Led the evolution of search systems toward LLM-based retrieval and ranking:", style_body_small))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Generative Retrieval</b> \u2014 decode-only generative models for product retrieval.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Large Search Model</b> \u2014 Transformer-based search model with parameter and behavior sequence scaling up across retrieval and ranking.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Multi-Modality</b> \u2014 multi-modal representation fusion and co-training for retrieval and ranking.", style_bullet))
 
     story.append(Paragraph("Shopping Agent", style_exp_label))
-    story.append(Paragraph("Built and launched TikTok's Shopping Agent from scratch:", style_body_small))
+    story.append(Paragraph("Led the design of a production LLM-based shopping agent system:", style_body_small))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Agent Framework</b> \u2014 Planner-Executor-Verifier architecture (extended ReAct) with multi-turn context management and heterogeneous tool use (Web / Product / Video Search).", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Memory &amp; Personalization</b> \u2014 Memory-as-Tool design that leverages user behavioral signals for personalized responses.", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>Post-Training</b> \u2014 rejection-sampling SFT with synthetic multi-turn data for model cold-start; RL fine-tuning with Rubric Reward &amp; Deep Search Reward. Research on Active Reasoning of LLM Agents (T3, AREW).", style_bullet))
