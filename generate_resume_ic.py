@@ -71,8 +71,8 @@ def build_resume():
     story.append(Paragraph(
         "Director of Engineering at TikTok, leading the design and development of <b>AI Search</b> and <b>Shopping Agent</b> "
         "for global e-commerce. 9+ years of experience in large-scale search and recommender systems, previously at ByteDance and Alibaba. "
-        "My work spans search, recommendation, and agent systems, which I view as different forms of large-scale decision systems "
-        "for resolving user intent under uncertainty \u2014 from retrieval and ranking to multi-step reasoning and decision making.",
+        "My work spans search, recommendation, and agent systems. I am building toward an <b>AI-native shopping decision system</b> "
+        "\u2014 unifying retrieval and ranking with multi-step reasoning and autonomous decision making.",
         style_body
     ))
     story.append(Paragraph(
