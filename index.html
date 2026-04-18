@@ -44,8 +44,87 @@
       </p>
       <p>
         My current research interests include LLM-powered search, LLM agents (post-training, personalization, and evaluation),
-        and recommender systems. Recipient of the <strong>SIGIR 2017 Best Paper Honorable Mention</strong> (IRGAN, 800+ citations).
+        and recommender systems. Recipient of the <strong>SIGIR 2017 Best Paper Honorable Mention</strong> (IRGAN, 840+ citations).
       </p>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section">
+      <h2>Featured Projects</h2>
+      <div class="featured-list">
+        <div class="featured-item featured-item-video">
+          <div class="featured-info">
+            <div class="featured-header">
+              <span class="featured-name">TikTok Shopping Agent</span>
+              <span class="featured-badge badge-prod">In Production</span>
+            </div>
+            <div class="featured-desc">Production LLM-based shopping agent — multi-step reasoning, memory-driven personalization, and RL post-training.</div>
+          </div>
+          <div class="featured-video" onclick="var v=this.querySelector('video');var b=this.querySelector('.play-btn');if(v.paused){this.classList.add('playing');v.play();b.style.display='none';}else{this.classList.remove('playing');v.pause();b.style.display='flex';}">
+            <video poster="ShoppingAgent/poster.jpg" loop playsinline>
+              <source src="ShoppingAgent/demo.mp4" type="video/mp4">
+            </video>
+            <div class="play-btn">&#9654;</div>
+          </div>
+        </div>
+        <div class="featured-item">
+          <div class="featured-info">
+            <div class="featured-header">
+              <span class="featured-name">T3</span>
+              <span class="featured-badge badge-oral">ICLR 2026 Oral</span>
+            </div>
+            <div class="featured-desc">Active reasoning of LLM agents via reinforcement learning with belief deviation reduction.</div>
+          </div>
+          <div class="featured-media">
+            <a href="T3/T3_oral_slides.pdf" target="_blank" rel="noopener" class="gh-card">
+              <img src="T3/T3_oral_slides.pdf.png" alt="T3 ICLR 2026 Oral Slides">
+            </a>
+            <a href="https://github.com/unimpor/T3" target="_blank" rel="noopener" class="gh-card">
+              <img src="https://opengraph.githubassets.com/1/unimpor/T3" alt="unimpor/T3 GitHub repo">
+            </a>
+          </div>
+        </div>
+        <div class="featured-item">
+          <div class="featured-info">
+            <div class="featured-header">
+              <span class="featured-name">IRGAN</span>
+              <span class="featured-badge badge-award">Best Paper Hon. Mention</span>
+            </div>
+            <div class="featured-desc">Minimax game framework unifying generative and discriminative IR models. SIGIR 2017, 840+ citations.</div>
+          </div>
+          <div class="featured-media">
+            <div class="featured-thumb">
+              <img src="IRGAN/sigir17-award.jpg" alt="SIGIR 2017 Best Paper Award Honorable Mention">
+            </div>
+            <a href="https://github.com/geek-ai/irgan" target="_blank" rel="noopener" class="gh-card">
+              <img src="https://opengraph.githubassets.com/1/geek-ai/irgan" alt="geek-ai/irgan GitHub repo">
+            </a>
+            <a href="IRGAN/sigir18-irgan-full-tutorial.pdf" target="_blank" rel="noopener" class="gh-card">
+              <img src="IRGAN/sigir18-irgan-full-tutorial.pdf.png" alt="SIGIR 2018 IRGAN Tutorial Slides">
+            </a>
+          </div>
+        </div>
+        <div class="featured-item featured-item-video">
+          <div class="featured-info">
+            <div class="featured-header">
+              <span class="featured-name">EdgeRec</span>
+              <span class="featured-badge badge-first">Industry First</span>
+            </div>
+            <div class="featured-desc">First on-device AI recommender system in billion-scale commerce feed, Mobile Taobao. CIKM 2020.</div>
+          </div>
+          <div class="featured-media">
+            <div class="featured-video" onclick="var v=this.querySelector('video');var b=this.querySelector('.play-btn');if(v.paused){this.classList.add('playing');v.play();b.style.display='none';}else{this.classList.remove('playing');v.pause();b.style.display='flex';}">
+              <video poster="EdgeRec/poster.jpg" loop playsinline>
+                <source src="EdgeRec/edgerec-web.mp4" type="video/mp4">
+              </video>
+              <div class="play-btn">&#9654;</div>
+            </div>
+            <a href="https://developer.aliyun.com/article/807710" target="_blank" rel="noopener" class="gh-card">
+              <img src="EdgeRec/aliyun.png" alt="Aliyun Developer Article">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- News -->
@@ -153,7 +232,7 @@
     <!-- Selected Publications -->
     <section class="section">
       <h2>Selected Publications</h2>
-      <p class="pub-stats">Total citations: 1,690 &middot; h-index: 16 &middot; Full list on <a href="https://scholar.google.com/citations?user=QseahYcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
+      <p class="pub-stats">Total citations: 1,707 &middot; h-index: 16 &middot; Full list on <a href="https://scholar.google.com/citations?user=QseahYcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
 
       <!-- LLM Agents -->
       <div class="pub-year-group">
@@ -164,6 +243,7 @@
             <span class="pub-meta">D Zou, Y Chen, F Feng, M Li, P Li, <strong>Y Gong</strong>, J Cheng</span>
             <span class="pub-venue">Submitted to ICML 2026</span>
             <span class="pub-award">Project Lead</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2603.12109" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li id="pub-t3">
             <span class="pub-title">Reducing Belief Deviation in Reinforcement Learning for Active Reasoning of LLM Agents</span>
@@ -172,12 +252,14 @@
             <span class="pub-award">Oral</span>
             <span class="pub-award">Project Lead</span>
             <span class="pub-cite">Cited by 1</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2510.12264" target="_blank" rel="noopener">Paper</a> <a href="https://github.com/unimpor/T3" target="_blank" rel="noopener">Code</a></span>
           </li>
           <li>
             <span class="pub-title">MemRerank: Preference Memory for Personalized Product Reranking</span>
-            <span class="pub-meta"><strong>Y Gong</strong>, et al.</span>
+            <span class="pub-meta">Z Peng, X Wu, H Tou, Y Fang, <strong>Y Gong</strong></span>
             <span class="pub-venue">arXiv 2026</span>
             <span class="pub-award">Project Lead</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2603.29247" target="_blank" rel="noopener">Paper</a></span>
           </li>
         </ul>
       </div>
@@ -192,6 +274,13 @@
             <span class="pub-venue">Submitted to ICML 2026</span>
             <span class="pub-award">Project Lead</span>
           </li>
+          <li id="pub-shoppingcomp">
+            <span class="pub-title">ShoppingComp: Are LLMs Really Ready for Your Shopping Cart?</span>
+            <span class="pub-meta">H Tou, Y Zeng, Y Li, C Ma, M Li, M Li, W Yuan, H Zhang, K Jia</span>
+            <span class="pub-venue">arXiv 2025</span>
+            <span class="pub-award">Project Lead</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2511.22978" target="_blank" rel="noopener">Paper</a> <a href="https://github.com/ByteDance-BandAI/ShoppingComp" target="_blank" rel="noopener">Code</a></span>
+          </li>
         </ul>
       </div>
 
@@ -205,13 +294,15 @@
             <span class="pub-venue">CIKM 2020</span>
             <span class="pub-award">First Author</span>
             <span class="pub-cite">Cited by 110</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2005.08416" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li>
             <span class="pub-title">Personalized Adaptive Meta Learning for Cold-start User Preference Prediction</span>
             <span class="pub-meta">R Yu, <strong>Y Gong</strong>, X He, Y Zhu, Q Liu, W Ou, B An</span>
             <span class="pub-venue">AAAI 2021</span>
             <span class="pub-award">Project Lead</span>
-            <span class="pub-cite">Cited by 101</span>
+            <span class="pub-cite">Cited by 102</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2012.11842" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li>
             <span class="pub-title">Exact-k Recommendation via Maximal Clique Optimization</span>
@@ -219,33 +310,38 @@
             <span class="pub-venue">SIGKDD 2019</span>
             <span class="pub-award">First Author</span>
             <span class="pub-cite">Cited by 63</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1905.07089" target="_blank" rel="noopener">Paper</a> <a href="https://github.com/gy910210/exact-k-recommendation" target="_blank" rel="noopener">Code</a></span>
           </li>
           <li id="pub-grn">
             <span class="pub-title">GRN: Generative Rerank Network for Context-wise Recommendation</span>
             <span class="pub-meta">Y Feng, B Hu, <strong>Y Gong</strong>, F Sun, Q Liu, W Ou</span>
             <span class="pub-venue">arXiv 2021</span>
             <span class="pub-award">Project Lead</span>
-            <span class="pub-cite">Cited by 32</span>
+            <span class="pub-cite">Cited by 35</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2104.00860" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li id="pub-ge">
             <span class="pub-title">Revisit Recommender System in the Permutation Prospective</span>
             <span class="pub-meta">Y Feng, <strong>Y Gong</strong>, F Sun, Q Liu, W Ou</span>
             <span class="pub-venue">arXiv 2021</span>
             <span class="pub-award">Project Lead</span>
-            <span class="pub-cite">Cited by 31</span>
+            <span class="pub-cite">Cited by 34</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2102.12057" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li>
             <span class="pub-title">Query-based Interactive Recommendation by Meta-path and Adapted Attention-GRU</span>
             <span class="pub-meta">Y Zhu, <strong>Y Gong</strong>, Q Liu, Y Ma, W Ou, J Zhu, B Wang, Z Guan, D Cai</span>
             <span class="pub-venue">CIKM 2019</span>
             <span class="pub-award">Co-First Author</span>
-            <span class="pub-cite">Cited by 21</span>
+            <span class="pub-cite">Cited by 22</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1907.01639" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li>
             <span class="pub-title">Gift: Graph-guided Feature Transfer for Cold-start Video Click-through Rate Prediction</span>
             <span class="pub-meta">Y Cao, S Hu, <strong>Y Gong</strong>, Z Li, Y Yang, Q Liu, S Ji</span>
             <span class="pub-venue">CIKM 2022</span>
-            <span class="pub-cite">Cited by 18</span>
+            <span class="pub-cite">Cited by 19</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2202.11525" target="_blank" rel="noopener">Paper</a></span>
           </li>
         </ul>
       </div>
@@ -260,25 +356,29 @@
             <span class="pub-venue">ACM SIGIR 2017</span>
             <span class="pub-award">Best Paper Honorable Mention</span>
             <span class="pub-award">First Industry Author</span>
-            <span class="pub-cite">Cited by 829</span>
+            <span class="pub-cite">Cited by 840</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1705.10513" target="_blank" rel="noopener">Paper</a> <a href="https://github.com/geek-ai/irgan" target="_blank" rel="noopener">Code</a></span>
           </li>
           <li>
             <span class="pub-title">Conceptualize and Infer User Needs in E-commerce</span>
             <span class="pub-meta">X Luo, Y Yang, KQ Zhu, <strong>Y Gong</strong>, K Yang</span>
             <span class="pub-venue">CIKM 2019</span>
             <span class="pub-cite">Cited by 21</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1910.03295" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li>
             <span class="pub-title">Query Tracking for E-commerce Conversational Search: A Machine Comprehension Perspective</span>
             <span class="pub-meta">Y Yang, <strong>Y Gong</strong>, X Chen</span>
             <span class="pub-venue">CIKM 2018</span>
             <span class="pub-cite">Cited by 13</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1810.03274" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li>
             <span class="pub-title">A Minimax Game for Instance Based Selective Transfer Learning</span>
             <span class="pub-meta">B Wang, M Qiu, X Wang, Y Li, <strong>Y Gong</strong>, X Zeng, J Huang, B Zheng, D Cai, ...</span>
             <span class="pub-venue">SIGKDD 2019</span>
             <span class="pub-cite">Cited by 60</span>
+            <span class="pub-links"><a href="https://dl.acm.org/doi/10.1145/3292500.3330841" target="_blank" rel="noopener">Paper</a></span>
           </li>
         </ul>
       </div>
@@ -293,12 +393,14 @@
             <span class="pub-venue">AAAI 2019</span>
             <span class="pub-award">First Author</span>
             <span class="pub-cite">Cited by 42</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1803.11326" target="_blank" rel="noopener">Paper</a> <a href="https://github.com/gy910210/DCMTL" target="_blank" rel="noopener">Code</a></span>
           </li>
           <li>
             <span class="pub-title">Multi-Modal Generative Adversarial Network for Short Product Title Generation in Mobile E-Commerce</span>
             <span class="pub-meta">J Zhang, P Zou, Z Li, Y Wan, X Pan, <strong>Y Gong</strong>, PS Yu</span>
             <span class="pub-venue">NAACL 2019</span>
             <span class="pub-cite">Cited by 35</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1904.01735" target="_blank" rel="noopener">Paper</a></span>
           </li>
           <li>
             <span class="pub-title">Automatic Generation of Chinese Short Product Titles for Mobile Display</span>
@@ -306,6 +408,7 @@
             <span class="pub-venue">AAAI 2019</span>
             <span class="pub-award">First Author</span>
             <span class="pub-cite">Cited by 35</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1803.11359" target="_blank" rel="noopener">Paper</a> <a href="https://github.com/gy910210/product-short-title" target="_blank" rel="noopener">Code</a></span>
           </li>
           <li>
             <span class="pub-title">Representing Verbs as Argument Concepts</span>
@@ -313,6 +416,7 @@
             <span class="pub-venue">AAAI 2016</span>
             <span class="pub-award">First Author</span>
             <span class="pub-cite">Cited by 20</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/1803.00729" target="_blank" rel="noopener">Paper</a> <a href="https://github.com/gy910210/Action-aaai2016" target="_blank" rel="noopener">Code</a></span>
           </li>
         </ul>
       </div>
