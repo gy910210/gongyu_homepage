@@ -149,7 +149,6 @@ def build_resume():
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>效率优化</b> \u2014 通过多模态表征、相似商品知识迁移，以及稀疏反馈下的冷启感知训练策略，提升冷启动排序效果。", style_bullet))
 
     # --- Alibaba ---
-    story.append(PageBreak())
     story.append(Spacer(1, 4))
     story.append(Indenter(left=INDENT))
     job_header3 = Table(

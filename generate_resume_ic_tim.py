@@ -66,7 +66,10 @@ def build_resume():
     story.append(Paragraph("ABOUT", style_section))
     story.append(Paragraph(
         "Director of Engineering at TikTok, leading the design and development of <b>AI Search</b> and <b>Shopping Agent</b> "
-        "for global e-commerce. 9+ years of experience in large-scale search and recommender systems, previously at ByteDance and Alibaba. "
+        "for global e-commerce. 9+ years of experience in large-scale search and recommender systems, previously at ByteDance and Alibaba.",
+        style_body
+    ))
+    story.append(Paragraph(
         "My work spans search, recommendation, and agent systems. I am building toward an <b>AI-native shopping decision system</b> "
         "\u2014 unifying retrieval and ranking with multi-step reasoning and autonomous decision making.",
         style_body
@@ -145,7 +148,6 @@ def build_resume():
     # story.append(Paragraph(u"<bullet>\u2022</bullet><b>Impact</b> \u2014 Monthly transacting products +199% (6.4M \u2192 19M); new-product 0\u21921 sales +625%.", style_bullet))
 
     # --- Alibaba ---
-    story.append(PageBreak())
     story.append(Spacer(1, 4))
     story.append(Indenter(left=INDENT))
     job_header3 = Table(
