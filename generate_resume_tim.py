@@ -72,7 +72,7 @@ def build_resume():
         style_body
     ))
     story.append(Paragraph(
-        "Research interests: LLM-powered search, LLM agents (post-training, personalization, evaluation), and recommender systems. "
+        "Research interests: LLM-powered search, LLM agents (harness engineering, memory & personalization, post-training, agentic-RL, evaluation), and recommender systems. "
         "Recipient of the <b>SIGIR 2017 Best Paper Honorable Mention</b> (IRGAN, 800+ citations).",
         style_body
     ))
