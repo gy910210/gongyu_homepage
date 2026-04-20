@@ -115,7 +115,7 @@ def build_resume():
 
     story.append(Paragraph("Shopping Agent", style_exp_label))
     story.append(Paragraph("从 0 到 1 构建并上线 TikTok 购物 Agent：", style_body_small))
-    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Agent 框架</b> \u2014 Planner-Executor-Verifier 架构（扩展的 ReAct），支持多轮上下文管理与异构工具调用（网页 / 商品 / 视频搜索）。", style_bullet))
+    story.append(Paragraph(u"<bullet>\u2022</bullet><b>Agent 框架</b> \u2014 Planner-Executor-Verifier 架构（Harness），支持多轮上下文管理与异构工具调用（网页 / 商品 / 视频搜索）。", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>记忆与个性化</b> \u2014 Memory-as-Tool 设计，利用用户行为信号生成个性化回复。", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>后训练 (Post-Training)</b> \u2014 基于合成多轮数据的拒绝采样 SFT 用于模型冷启动；采用 Rubric Reward 与 Deep Search Reward 的强化学习微调。以及大模型 Agent 主动推理方向的研究（T3、AREW）。", style_bullet))
     story.append(Paragraph(u"<bullet>\u2022</bullet><b>评测与基准</b> \u2014 构建 ShoppingBench（深度商品搜索）、APeB（个性化 Agent 行为）以及基于 rubric 的报告评测。", style_bullet))
