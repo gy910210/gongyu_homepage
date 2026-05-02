@@ -185,7 +185,7 @@ def build_resume():
 
     # --- LLM Agents ---
     story.append(Paragraph("LLM Agents", style_pub_group))
-    add_pub("On Information Self-Locking in RL for Active Reasoning of LLM Agents", "Submitted to ICML 2026", "Project Lead")
+    add_pub("On Information Self-Locking in RL for Active Reasoning of LLM Agents", "ICML 2026", "Project Lead")
     add_pub("Reducing Belief Deviation in RL for Active Reasoning of LLM Agents", "ICLR 2026 | Oral", "Project Lead")
     add_pub("MemRerank: Preference Memory for Personalized Product Reranking", "arXiv 2026", "Project Lead")
 
